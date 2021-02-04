@@ -21,11 +21,13 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  if (n%2 ==1){
-    console.log(true);
-  } else{
-    console.log(false);
-  }
+    return n%2 == 1;
+  
+    // if (n%2 ==1){
+  //   return true;
+  // } else{
+  //   return false;
+  // }
 }
   isOdd(7);
   isOdd(10);
@@ -39,7 +41,11 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  
+  if (isOdd(n)){
+    return (n -1)/2;
+  } else {
+      return n/2;
+  }
 }
 
 /**
@@ -54,9 +60,9 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
  if (n%2 == 0){
-  console.log(n+n);
+  return n+n;
  } else {
-  console.log(n*n);
+  return n*n;
  }
 }
   squareOrDouble(16);
